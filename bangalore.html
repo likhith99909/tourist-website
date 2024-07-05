@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--Code by Divinector (www.divinectorweb.com)-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(bb.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li {
+    display: inline-block;
+}
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 100%;
+    padding: 15px 0;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    img {
+        width: ;
+    }
+    .nav-area {
+        float: none;
+        margin-top: 0;
+    }
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+    .nav-area {
+        text-align: center;
+    }
+.o
+{
+  margin-top: 100px;
+  
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>TOUR AND TRAVELS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://i.postimg.cc/mg4rWBmv/logo.png" alt="">
+        </div>
+<ul class="nav-area">
+<li><a href="locations.html">viewpackages</a></li>
+<li><a href="#">logout</a></li>
+</ul>
+</div >
+<div class="row">
+  <span><img src="b.jpg" style="width: 450px;height: 393px;position: absolute;top: 200px"></span>
+  <span>
+   <form name="p1">
+    <ul class="list-group" style="position: absolute;top: 200px;left: 800px;width: 450px;height: 453px;">
+  <li class="list-group-item list-group-item-primary">Name : BANGALORE</li>
+  <li class="list-group-item list-group-item-secondary">Description: we have BANGALORE/li>
+  <li class="list-group-item list-group-item-success">maximum of 8 days</li>
+  <li class="list-group-item list-group-item-danger"><input type="checkbox" name="q" id="stay" value=5000>  stay amount is RS.5000</li>
+  <li class="list-group-item list-group-item-warning">Food <input type="radio" name="x" value=3000 checked='checked'>yes<input type="radio" name="x" value=0>NO</li>
+  <li class="list-group-item list-group-item-info">Bus<input type="radio" name="y" value=1200 checked="checked">  train <input type="radio" name="y" value=900>  airline<input type="radio" name="y" value=2400>  </li>
+  <li class="list-group-item list-group-item-light"><input type="date" name="w" ></li>
+  <li class="list-group-item list-group-item-dark ">TOTAL : <input type="number" name="r" value="4500" id="t1"></li>
+</ul>
+</form>
+  </span>
+    <button style="border-radius: 20px; background-color: red ; position:absolute; top: 630px;left: 580px;" onclick="myf()">CONFIRM TOTAL</button>
+  <button style="border-radius: 20px; background-color: blue ; position:absolute; top: 630px;left: 750px;" onclick="myfu()">CONFIRM BOOKING</button>
+
+
+</div>
+</header>
+<script>
+    function myf()
+    {
+        var total;
+        var s1=document.getElementById('t1');
+        var len=document.p1.x.length;
+        var cb=document.p1.q.length;
+        var rb=document.p1.y.length;
+        for(i=0;i<len;i++){
+        var res=document.p1.x[i].checked;
+        if(res)
+        {
+           var sel=document.p1.x.value;
+        }
+       }
+        var res1=document.p1.q.checked;
+        if(res1)
+        {
+           var sel1=5000;
+        }
+        else
+        {
+            var sel1=0;
+        }
+
+          for(i=0;i<rb;i++){
+        var res2=document.p1.y[i].checked;
+        if(res2)
+        {
+           var sel2=document.p1.y.value;
+        }
+       }
+       var q1=parseInt(sel);
+       var q2=parseInt(sel1);
+       var q3=parseInt(sel2);
+       var sum=q1+q2+q3;  
+       s1.value=sum;
+        }
+   function myfu(){
+       setTimeout(function(){
+        location.replace('booking.html');
+       },3000)
+   }
+</script>
+</body>
+</html>
