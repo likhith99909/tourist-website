@@ -5,13 +5,13 @@ Welcome to the Tourist Website project! This PHP-based platform is designed to p
 
 ## Features
 
-### 2. **Detailed Itineraries**
+### 1. **Detailed Itineraries**
 The website offers well-crafted itineraries for various destinations. These itineraries include recommended activities, places to visit and more. Users can customize these itineraries according to their preferences.
 
-### 3. **Secure Booking System**
+### 2. **Secure Booking System**
 The website features a secure booking system that allows users to book accommodations directly through the platform. The booking system ensures that user data is protected and transactions are secure.
 
-### 4. **Destination Exploration**
+### 3. **Destination Exploration**
 Users can explore a wide range of destinations with detailed descriptions, images, and key information. Each destination page provides information about local attractions, cultural highlights, and practical tips for travelers.
 
 ## Technologies Used
@@ -25,7 +25,3 @@ We welcome contributions from the community! If you have suggestions for new fea
 ## Contact
 
 For any questions or support, please contact [likhithsamayamanthula@gmail.com] or create an issue in the GitHub repository.
-
----
-
-Feel free to customize this description further to match the specific details and nuances of your project!
